@@ -1,40 +1,48 @@
-NetworkMetadata(name='Artif-2', structure=[5, 10, 5, 2], activation_function='tanh', batch_size=30, epochs=80, id=7261)
+NetworkMetadata(name='Artif-2', structure=[5, 10, 5, 2], activation_function='tanh', batch_size=25, epochs=200, id=5302)
 n_train: 4000 n_test: 1000 
 Model Accuracy: 1.0
 
-NetworkMetadata(name='Artif-2', structure=[5, 10, 5, 2], activation_function='tanh', batch_size=30, epochs=200, id=9445)
-n_train: 4000 n_test: 1000 
+NetworkMetadata(name='Artif-1', structure=[5, 10, 5, 2], activation_function='tanh', batch_size=25, epochs=200, id=2054)
+n_train: 24000 n_test: 6000 
 Model Accuracy: 1.0
 
-NetworkMetadata(name='Artif-2', structure=[5, 10, 5, 2], activation_function='tanh', batch_size=30, epochs=500, id=8953)
-n_train: 4000 n_test: 1000 
-Model Accuracy: 1.0
+NetworkMetadata(name='MB-ER', structure=[1000, 100, 50, 2], activation_function='tanh', batch_size=25, epochs=200, id=4243)
+n_train: 1584 n_test: 396 
+Model Accuracy: 0.9343434572219849
 
-NetworkMetadata(name='Artif-2', structure=[5, 10, 6, 2, 2], activation_function='tanh', batch_size=30, epochs=80, id=6278)
-n_train: 4000 n_test: 1000 
-Model Accuracy: 0.9480000138282776
+NetworkMetadata(name='BreastCancer', structure=[30, 16, 2, 2], activation_function='tanh', batch_size=25, epochs=200, id=6776)
+n_train: 455 n_test: 114 
+Model Accuracy: 0.9736841917037964
 
-NetworkMetadata(name='Artif-2', structure=[5, 10, 6, 2, 2], activation_function='tanh', batch_size=30, epochs=200, id=4011)
-n_train: 4000 n_test: 1000 
-Model Accuracy: 0.9480000138282776
+NetworkMetadata(name='LetterRecognition', structure=[16, 40, 30, 2], activation_function='tanh', batch_size=25, epochs=200, id=8592)
+n_train: 1262 n_test: 316 
+Model Accuracy: 0.9715189933776855
 
-NetworkMetadata(name='Artif-2', structure=[5, 10, 6, 2, 2], activation_function='tanh', batch_size=30, epochs=500, id=9348)
-n_train: 4000 n_test: 1000 
-Model Accuracy: 0.9480000138282776
+NetworkMetadata(name='MNIST', structure=[784, 10, 5, 2], activation_function='tanh', batch_size=25, epochs=200, id=9986)
+n_train: 11824 n_test: 2956 
+Model Accuracy: 0.9986467957496643
 
-NetworkMetadata(name='Artif-2', structure=[5, 10, 5, 2], activation_function='relu', batch_size=30, epochs=80, id=9313)
-n_train: 4000 n_test: 1000 
-Model Accuracy: 1.0
+NetworkMetadata(name='MNIST', structure=[784, 20, 10, 2], activation_function='tanh', batch_size=25, epochs=200, id=5235)
+n_train: 11824 n_test: 2956 
+Model Accuracy: 0.9989851117134094
 
-NetworkMetadata(name='Artif-2', structure=[5, 10, 5, 2], activation_function='relu', batch_size=30, epochs=200, id=3987)
-n_train: 4000 n_test: 1000 
-Model Accuracy: 1.0
+NetworkMetadata(name='MNIST', structure=[784, 30, 20, 10, 2], activation_function='tanh', batch_size=25, epochs=200, id=9318)
+n_train: 11824 n_test: 2956 
+Model Accuracy: 0.9989851117134094
 
-NetworkMetadata(name='Artif-2', structure=[5, 10, 5, 2], activation_function='relu', batch_size=30, epochs=500, id=6543)
-n_train: 4000 n_test: 1000 
-Model Accuracy: 1.0
+NetworkMetadata(name='LetterRecognition', structure=[16, 40, 30, 2], activation_function='tanh', batch_size=25, epochs=200, id=1326)
+n_train: 1262 n_test: 316 
+Model Accuracy: 0.9810126423835754
 
-NetworkMetadata(name='LetterRecognition', structure=[16, 30, 28, 26, 26], activation_function='relu', batch_size=50, epochs=500, id=5198)
-n_train: 16000 n_test: 4000 
-Model Accuracy: 0.9177500009536743
+NetworkMetadata(name='LetterRecognition', structure=[16, 30, 28, 26, 2], activation_function='tanh', batch_size=25, epochs=200, id=9659)
+n_train: 1262 n_test: 316 
+Model Accuracy: 0.9841772317886353
+
+NetworkMetadata(name='LetterRecognition', structure=[16, 30, 15, 2], activation_function='tanh', batch_size=25, epochs=200, id=3011)
+n_train: 1262 n_test: 316 
+Model Accuracy: 0.9746835231781006
+
+NetworkMetadata(name='LetterRecognition', structure=[16, 8, 8, 2], activation_function='tanh', batch_size=25, epochs=200, id=7417)
+n_train: 1262 n_test: 316 
+Model Accuracy: 0.9430379867553711
 
