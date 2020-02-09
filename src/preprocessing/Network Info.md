@@ -61,6 +61,7 @@ Decompositional (DeepRED) Rule Extraction
 | LetterRecognition* | 16-40-30-2    | 1262  | 316  | 97.15       | 16.10             |                 |               |               |                          |                          |                   |
 | MNIST*             | 784-10-5-2    | 11824 | 2956 | 99.86       | 230.9             | 9, 6            | 99.996        | 99.76         | 2.53                     | 126.1                    | 1139.57           |
 | MB-ER              | 1000-100-50-2 | 1584  | 396  | 93.43       | 33.97             | 168, 40         | 94.7          | 94.2          | 5.55                     | 120.85                   | 311.53            |
+| MB-DR              | 1000-100-50-2 | 1584  | 396  | 63.13       | 34.6              |                 |               |               |                          |                          |                   |
 
 *Working with binarized data (transform problem into a binary classification task)
 

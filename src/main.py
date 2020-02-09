@@ -13,9 +13,9 @@ from helpers.early_stopping import early_stopping
 
 # ------------------------------------------ Initialise Parameters ----------------------------------------------------
 NetworkMetadata = namedtuple('NetworkMetadata', 'name structure activation_function batch_size epochs id')
-network_info = NetworkMetadata(name='LetterRecognition',
+network_info = NetworkMetadata(name='MB-DR',
                                activation_function='tanh',
-                               structure=[16, 8, 8, 2],
+                               structure=[1000, 100, 50, 2],
                                id=randint(0, 10000),
                                batch_size=25,
                                epochs=200)

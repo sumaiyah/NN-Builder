@@ -46,3 +46,7 @@ NetworkMetadata(name='LetterRecognition', structure=[16, 8, 8, 2], activation_fu
 n_train: 1262 n_test: 316 
 Model Accuracy: 0.9430379867553711
 
+NetworkMetadata(name='MB-DR', structure=[1000, 100, 50, 2], activation_function='tanh', batch_size=25, epochs=200, id=5036)
+n_train: 1584 n_test: 396 
+Model Accuracy: 0.631313145160675
+
