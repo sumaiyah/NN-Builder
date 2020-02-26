@@ -1,6 +1,0 @@
-note that for boolean datasets, the NN is trained on all the available data to acheive a 100 accuracy
-NN is trained with the sigmoid function
-
-todo:
-    - build NN with their weights manually
-    - train and test NN 
