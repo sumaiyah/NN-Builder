@@ -7,8 +7,7 @@ from keras.models import Model
 from keras.layers import Input
 from keras.layers import Dense
 
-def build(structure: List[int], activation_function: str, loss='categorical_crossentropy', optimizer='adam'):
-    # Assuming structure is none empty TODO handle case none empty structure
+def build(structure: List[int], activation_function: str):
     """
     Args:
         structure: structure of network INCLUDING input and output layer
@@ -36,8 +35,8 @@ def build(structure: List[int], activation_function: str, loss='categorical_cros
     model = Model(inputs=input_layer, outputs=output_layer)
 
     # Compile Model
-    model.compile(loss=loss,
-                  optimizer=optimizer,
+    model.compile(loss='categorical_crossentropy',
+                  optimizer='adam',
                   metrics=['accuracy'])
 
     return model

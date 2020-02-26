@@ -46,22 +46,22 @@ By default networks trained with:
 
 - ```
   batch_size=25,
-  epochs=200
+  epochs=200,
+  act=tanh
   ```
 
 
 
 Decompositional (DeepRED) Rule Extraction
 
-| Dataset            | NN Structure  | Train | Test | NN Accuracy | NN Train Time (s) | Rules Extracted | Rule Accuracy | Rule Fidelity | Av Number Terms per rule | Rule Extraction Time (s) | Memory Usage (Mb) |
-| ------------------ | ------------- | ----- | ---- | ----------- | ----------------- | --------------- | ------------- | ------------- | ------------------------ | ------------------------ | ----------------- |
-| Artif-1            | 5-10-5-2      | 24000 | 6000 | 100         | 228.87            | 4, 6            | 100           | 100           | 2.5                      | 11.57                    | 92.03             |
-| Artif-2            | 5-10-5-2      | 4000  | 1000 | 100         | 44.7              | 16, 42          | 94.2          | 94.2          | 4.60                     | 6.10                     | 47.55             |
-| BreastCancer       | 30-16-2-2     | 455   | 114  | 97.37       | 5.107             | 2, 2            | 89.47         | 90.35         | 1.5                      | 0.665                    | 9.93              |
-| LetterRecognition* | 16-40-30-2    | 1262  | 316  | 97.15       | 16.10             |                 |               |               |                          |                          |                   |
-| MNIST*             | 784-10-5-2    | 11824 | 2956 | 99.86       | 230.9             | 9, 6            | 99.996        | 99.76         | 2.53                     | 126.1                    | 1139.57           |
-| MB-ER              | 1000-100-50-2 | 1584  | 396  | 93.43       | 33.97             | 168, 40         | 94.7          | 94.2          | 5.55                     | 120.85                   | 311.53            |
-| MB-DR              | 1000-100-50-2 | 1584  | 396  | 63.13       | 34.6              |                 |               |               |                          |                          |                   |
+| Dataset            | NN Structure  | Train | Test | NN Accuracy | NN Train Time (s) | Rules Extracted             | Rule Accuracy | Rule Fidelity | Av Number Terms per rule | Rule Extraction Time (s) | Memory Usage (Mb) |
+| ------------------ | ------------- | ----- | ---- | ----------- | ----------------- | --------------------------- | ------------- | ------------- | ------------------------ | ------------------------ | ----------------- |
+| Artif-1            | 5-10-5-2      | 24000 | 6000 | 100         | 228.87            | 4, 6                        | 100           | 100           | 2.5                      | 11.57                    | 92.03             |
+| Artif-2            | 5-10-5-2      | 4000  | 1000 | 100         | 44.7              | 16, 42                      | 94.2          | 94.2          | 4.60                     | 6.10                     | 47.55             |
+| BreastCancer       | 30-16-2-2     | 455   | 114  | 97.37       | 5.107             | 2, 2                        | 89.47         | 90.35         | 1.5                      | 0.665                    | 9.93              |
+| LetterRecognition* | 16-40-30-2    | 1262  | 316  | 97.15       | 16.10             | **Times out on my machine** |               |               |                          |                          |                   |
+| MNIST*             | 784-10-5-2    | 11824 | 2956 | 99.86       | 230.9             | 9, 6                        | 99.996        | 99.76         | 2.53                     | 126.1                    | 1139.57           |
+| MB-ER              | 1000-100-50-2 | 1584  | 396  | 93.43       | 33.97             | 168, 40                     | 94.7          | 94.2          | 5.55                     | 120.85                   | 311.53            |
 
 *Working with binarized data (transform problem into a binary classification task)
 
@@ -78,7 +78,19 @@ Pedagogical Baseline
 | MNIST             | 8, 6            | 99.696        | 99.763        | 2.57                     | 32.2                     | 575.6             |
 | MB-ER             | 10, 9           | 91.41         | 92.42         | 3.05                     | 13.69                    | 204.8             |
 
+| Dataset      | n rules decomp | n rules ped | n overlapping features |
+| ------------ | -------------- | ----------- | ---------------------- |
+| Artif-2      | 16, 42         | 6, 4        | 4                      |
+| BreastCancer | 2, 2           | 5, 6        | 1                      |
+| MNIST        | 9, 6           | 8, 6        | 4                      |
+|              |                |             |                        |
+| MB-ER        | 168, 40        | 10, 9       | 3                      |
+
+
+
 ----
+
+(Extra MNIST Tests just to see what happens?)
 
 ```
 MNIST with [784, 20, 10, 2]
