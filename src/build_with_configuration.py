@@ -1,33 +1,10 @@
-import numpy as np
 import pandas as pd
-from collections import OrderedDict, namedtuple
 
 from helpers.cross_validate import cross_validate
-from helpers.configurations import get_configuration
 
-# Neural Network metadata
-# NetworkMetadata = namedtuple('NetworkMetadata', 'name target_col_name structure activation_function hyperparameters')
-# network_metadata = NetworkMetadata(name='Artif-1',
-#                                            target_col_name='y',
-#                                            structure=[5, 10, 5, 2],
-#                                            activation_function='tanh',
-#                                            hyperparameters=OrderedDict(batch_size=500, epochs=100, verbose=0))
-network_metadata = get_configuration('BreastCancer')
+from src import NN_LABELS_PATH, TRUE_LABELS_PATH, NN_INFORMATION_PATH, DATA_PATH
 
-# Configure file paths and initialise files
-BASE_PATH = 'C:/Users/sumaiyah/OneDrive - University Of Cambridge/Project/data/%s/' % network_metadata.name
-MODEL_PATH = BASE_PATH + 'models/'
-LABEL_PATH = BASE_PATH + 'labels/'
-
-DATA_PATH = BASE_PATH + 'data.csv'
-FOLD_PATH = BASE_PATH + 'fold_indices.txt'
-
-NN_INFORMATION_PATH = BASE_PATH + 'information.txt'
-
-NN_LABELS_PATH = LABEL_PATH + 'NN_labels.txt'
-TRUE_LABELS_PATH = LABEL_PATH + 'TRUE_labels.txt'
-
-if __name__ == "__main__":
+def run(network_metadata):
     # Initialise txt files - clear old contents
     open(NN_LABELS_PATH, 'w').close()
     open(TRUE_LABELS_PATH, 'w').close()

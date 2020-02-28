@@ -10,7 +10,7 @@ from helpers.get_fold_data import get_train_and_test_indices
 
 
 def cross_validate(X, y, n_folds, network_metadata):
-    from src.main import MODEL_PATH, FOLD_PATH, NN_INFORMATION_PATH, NN_LABELS_PATH, TRUE_LABELS_PATH
+    from src import MODEL_PATH, FOLD_PATH, NN_INFORMATION_PATH, NN_LABELS_PATH, TRUE_LABELS_PATH
     """
     Args:
         X: input features
