@@ -6,13 +6,13 @@ from helpers.cross_validate import cross_validate
 from helpers.configurations import get_configuration
 
 # Neural Network metadata
-NetworkMetadata = namedtuple('NetworkMetadata', 'name target_col_name structure activation_function hyperparameters')
-network_metadata = NetworkMetadata(name='Artif-1',
-                                           target_col_name='y',
-                                           structure=[5, 10, 5, 2],
-                                           activation_function='tanh',
-                                           hyperparameters=OrderedDict(batch_size=500, epochs=100, verbose=0))
-# network_metadata = get_configuration('MB-ER')
+# NetworkMetadata = namedtuple('NetworkMetadata', 'name target_col_name structure activation_function hyperparameters')
+# network_metadata = NetworkMetadata(name='Artif-1',
+#                                            target_col_name='y',
+#                                            structure=[5, 10, 5, 2],
+#                                            activation_function='tanh',
+#                                            hyperparameters=OrderedDict(batch_size=500, epochs=100, verbose=0))
+network_metadata = get_configuration('BreastCancer')
 
 # Configure file paths and initialise files
 BASE_PATH = 'C:/Users/sumaiyah/OneDrive - University Of Cambridge/Project/data/%s/' % network_metadata.name
