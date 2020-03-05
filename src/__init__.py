@@ -1,4 +1,4 @@
-DATASET_NAME = 'BreastCancer'
+DATASET_NAME = 'LetterRecognition-binary'
 
 # Configure file paths and initialise files
 BASE_PATH = 'C:/Users/sumaiyah/OneDrive - University Of Cambridge/Project/data/%s/' % DATASET_NAME

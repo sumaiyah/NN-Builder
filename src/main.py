@@ -1,4 +1,4 @@
-from collections import namedtuple
+from collections import namedtuple, OrderedDict
 
 from helpers.configurations import NetworkMetadata, get_configuration
 import build_with_configuration
@@ -15,10 +15,10 @@ if given_configuration:
     # Either define a configuration here or get a pre-defined configuration from configurations.py
     # Neural Network metadata
     # network_metadata = NetworkMetadata(name=DATASET_NAME,
-    #                                            target_col_name='y',
-    #                                            structure=[5, 10, 5, 2],
+    #                                            target_col_name='letter',
+    #                                            structure=[16, 16, 10, 2],
     #                                            activation_function='tanh',
-    #                                            hyperparameters=OrderedDict(batch_size=500, epochs=100, verbose=0))
+    #                                            hyperparameters=OrderedDict(batch_size=20, epochs=400, verbose=0))
     network_metadata = get_configuration(DATASET_NAME)
 
 else:
